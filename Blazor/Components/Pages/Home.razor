@@ -1,7 +1,84 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Velkommen til GF2 Spilprojekt</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="welcome-section">
+                <h1 class="display-4 mb-4">Velkommen til GF2 Spilprojektet! 🎮</h1>
+                
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="h4 mb-3">Kære GF2'er</h2>
+                        <p>
+                            Velkommen til vores spilprojekt! Her finder du fire spændende programmeringsopgaver, 
+                            som vil hjælpe dig med at udvikle dine færdigheder inden for webudvikling og C#:
+                        </p>
+                        
+                        <ul class="list-group list-group-flush mt-3">
+                            <li class="list-group-item">
+                                🎯 <a href="tic-tac-toe"><strong>Tic Tac Toe</strong></a> - Klassisk kryds og bolle spil
+                            </li>
+                            <li class="list-group-item">
+                                🔵 <a href="four-in-a-row"><strong>Four in a Row</strong></a> - Strategisk fire på stribe
+                            </li>
+                            <li class="list-group-item">
+                                ⌨️ <a href="type-racer"><strong>Type Racer</strong></a> - Test dine skrivefærdigheder
+                            </li>
+                            <li class="list-group-item">
+                                📝 <a href="wordle"><strong>Wordle</strong></a> - Gæt dagens ord
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-Welcome to your new app.
+                <div class="alert alert-info">
+                    <h3 class="h5">Sådan kommer du i gang:</h3>
+                    <ol class="mb-0">
+                        <li>Vælg et projekt fra menuen til venstre</li>
+                        <li>Læs opgavebeskrivelsen grundigt</li>
+                        <li>Start med at planlægge din løsning</li>
+                        <li>God fornøjelse med kodningen!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .welcome-section {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .card {
+        border-radius: 10px;
+        border: none;
+    }
+
+    .list-group-item {
+        border-left: none;
+        border-right: none;
+        padding: 1rem;
+    }
+
+    .alert {
+        border-radius: 10px;
+    }
+
+    h1 {
+        color: #2c3e50;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    @@media (max-width: 768px) {
+        .display-4 {
+            font-size: 2rem;
+        }
+    }
+</style>
