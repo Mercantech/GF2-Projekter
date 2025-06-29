@@ -1,31 +1,40 @@
 ﻿using System;
+using Hjemmet;
+using Kontoret;
+using Enterprice;
+
 bool run = true;
 while (run)
 {
     PrintMenu();
-    string valg = Console.ReadLine();
+    string valg = Console.ReadLine() ?? "?";
 
     switch (valg)
     {
         case "1":
             // Kald GuessANumber
-            Hjemmet.GuessANumber.Start();
+            GuessANumber guessANumber = new GuessANumber();
+            guessANumber.Start();
             break;
         case "2":
             // Kald RockPaperScissors
-            Hjemmet.RockPaperScissors.Start();
+            RockPaperScissors rockPaperScissors = new RockPaperScissors();
+            rockPaperScissors.Start();
             break;
         case "3":
             // Kald TicTacToe
-            Hjemmet.TicTacToe.Start();
+            TicTacToe ticTacToe = new TicTacToe();
+            ticTacToe.Start();
             break;
         case "4":
             // Kald BinaryConverter
-            Kontoret.BinaryConverter.Start();
+            BinaryConverter binaryConverter = new BinaryConverter();
+            binaryConverter.Start();
             break;
         case "5":
             // Kald ADService
-            Enterprice.ADService.Start();
+            ADService adService = new ADService();
+            adService.Start();
             break;
         case "?":
             PrintMenu();
@@ -40,7 +49,8 @@ while (run)
     }
 }
 
-void PrintMenu(){
+void PrintMenu()
+{
     Console.Clear();
     Console.WriteLine("Vælg et program:");
     Console.WriteLine("1. Gæt et tal");

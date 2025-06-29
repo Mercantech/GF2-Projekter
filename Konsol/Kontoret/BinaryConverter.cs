@@ -2,7 +2,7 @@ namespace Kontoret
 {
     public class BinaryConverter
     {
-        public static void Start()
+        public void Start()
         {
             Console.WriteLine("Binærkodeomformer er ikke implementeret endnu.");
             Console.ReadKey();
